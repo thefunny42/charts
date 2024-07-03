@@ -1,0 +1,36 @@
+apiVersion: v1
+entries:
+  opa:
+  - apiVersion: v2
+    appVersion: 0.65.0
+    created: "2024-07-03T07:55:54.326160243Z"
+    description: Run the open policy agent with a set of policies
+    digest: 4052ee6c7c66ea439ae50dea77f4187529cad828393878748d745faf342bac95
+    name: opa
+    type: application
+    urls:
+    - opa-0.65.0.tgz
+    version: 0.65.0
+  userservice:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2024-07-03T07:55:54.331968037Z"
+    dependencies:
+    - name: mongodb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - mongodb
+      version: 15.6.11
+    - name: opa
+      repository: file://../opa
+      tags:
+      - opa
+      version: 0.65.0
+    description: A simple user service
+    digest: de1735472997508b7c36d72f68a8410c6ae80f01c1df4fc6dbbea73bce5eb0a3
+    name: userservice
+    type: application
+    urls:
+    - userservice-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-07-03T07:55:54.325648809Z"
