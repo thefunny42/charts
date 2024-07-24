@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   opa:
   - apiVersion: v2
+    appVersion: 0.66.0
+    created: "2024-07-24T17:19:17.963839561Z"
+    description: Run the open policy agent with a set of policies
+    digest: 34a7840b9a7ed9e021363cfabeff62d58b4bcc5420ce89a9054a6a9f1243d7ee
+    name: opa
+    type: application
+    urls:
+    - https://thefunny42.github.io/charts/opa-0.66.0.tgz
+    version: 0.66.0
+  - apiVersion: v2
     appVersion: 0.65.0
-    created: "2024-07-03T12:42:47.226081142Z"
+    created: "2024-07-24T17:19:17.963375016Z"
     description: Run the open policy agent with a set of policies
     digest: ba5c74e27192fd4c04b8568344638a63ff48133cbb284c73698fb80f415624de
     name: opa
@@ -14,7 +24,7 @@ entries:
   userservice:
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2024-07-03T12:42:47.238097666Z"
+    created: "2024-07-24T17:19:17.976530482Z"
     dependencies:
     - name: mongodb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -35,7 +45,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2024-07-03T12:42:47.232395771Z"
+    created: "2024-07-24T17:19:17.970432159Z"
     dependencies:
     - name: mongodb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -54,4 +64,4 @@ entries:
     urls:
     - https://thefunny42.github.io/charts/userservice-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-03T12:42:47.225399979Z"
+generated: "2024-07-24T17:19:17.962792692Z"
